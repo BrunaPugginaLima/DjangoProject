@@ -1,0 +1,11 @@
+{% if subnets %}
+    <p>
+     Subnets: 
+    </p>
+    {% for subnet in subnets %}
+    <ul>
+        {{subnet.id }}    {{subnet.subnet_name }} {{subnet.subnet_desc }} {{subnet.addr }} {{subnet.vlan}}
+       <!--{{subnet.subnet_name }} {{subnet.subnet_desc }} {{subnet.addr }}-->
+    </ul>
+    {% endfor %}
+{% endif %}

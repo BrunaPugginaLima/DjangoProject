@@ -1,0 +1,7 @@
+<form method="post" class="form-inline">
+                {% csrf_token %}
+                <table>
+                {{ form.as_table }}
+                </table>
+                <button type="submit" class="btn btn-primary mb-2 ml-3">Create</button>
+</form>

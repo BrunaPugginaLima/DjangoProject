@@ -1,0 +1,10 @@
+{% if vlans %}
+    <p>
+    Chegaram as vlans
+    </p>
+    {% for vlan in vlans %}
+    <ul>
+        {{vlan.id }}    {{vlan.vlan_id }} {{vlan.vlan_name }} {{vlan.vlan_desc }}
+    </ul>
+    {% endfor %}
+{% endif %}
